@@ -7,6 +7,7 @@ describe "Dog" do
     db.execute("CREATE TABLE dogs (id INTEGER PRIMARY KEY, name TEXT, breed TEXT);")
   end
 
+
   describe "inheritence" do
     it 'inherits from ActiveRecord::Base' do
       expect(Dog.superclass).to eq(ActiveRecord::Base)
